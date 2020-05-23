@@ -22,5 +22,7 @@ def removeOne(Id):
 	rooms.remove(the_room[0])
 	return {'rooms' : rooms}
 
+	print("jeje")
+
 
 run(reloader=True, debug=True)
