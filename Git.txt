@@ -1,0 +1,36 @@
+Git init, le decimos a git que empiece a monitorizar todo nuestro proyecto
+
+git status nos dice el estado de nuestro proyecto
+
+como podemos comprobar nos muestra que no hemos añadidos estos archivos,para hacerlo lo podemos hacer con git add
+
+Luego de agregar el archivo rooms.py podemos ver que tras ejecutar el comando add el archivo se ha añadido.
+
+con git add -A agregramos todo lo que tengamos en la carpeta del proyecto.
+
+
+Para guardas los cambios vamos a utilizar commit con el mensaje "Iniciamos" para indicar que hemos hechos los primeros cambios.
+
+si por ejemplo ahora hicieramos algun cambio en rooms.py y despues hicieramos git status nos avisaría de que hemos modificado ese archivo: vamos a comprobarlo
+
+vamos a agregarlos y ejecutar un commit indicando los cambios.
+
+vamos a utilizar ahora git log para ver una lista de nuestro commits, los utilizamos para ver un registro de los cambios que hemos ido realizando.
+
+A continuación vamos a utilizar el comando checkout
+
+copiamos el codigo del commit con el mensaje "iniciamos" que fue nuestro primero commit y hacemos git checkout "codigo"
+tenemos los archivos con el estado que teniamos en ese momento sin los ultimos cambios ya que hemos ido hacia un estado mas antiguo de los archivos.
+
+Gracias a esto podemos detectar errores y resolverlos de una manera muy sencilla
+
+Para volver al ultimo commit, utilizamos el comando git checkout master
+
+También tenemos el comando git reset que es similar a checkout a diferencia que este elimina a los commits
+
+Tenemos :
+git reset --soft 
+( Git reset más simple y que no toca nuestro "Working Area" (No se mete con nuestro codigo)
+
+git reset --hard 
+( git reset borra absolutamente todo lo que hay en el commit)
